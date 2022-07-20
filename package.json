@@ -1,0 +1,28 @@
+{
+  "name": "autojsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome --spec 'cypress/integration/cypress_auto_sample.js'",
+    "testcafe:run": "testcafe chrome testcafe/testcafe_auto_sample.js",
+    "wdio:run": "wdio run wdio.conf.js --spec ./webdriverio/webdriverio_auto_sample.js",
+    "codeceptjs:run": "codeceptjs run ./codeceptjs/codeceptjs_auto_sample.js --steps" 
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/cli": "^6.1.17",
+    "@wdio/local-runner": "^6.1.17",
+    "@wdio/mocha-framework": "^6.1.17",
+    "@wdio/spec-reporter": "^6.1.14",
+    "@wdio/sync": "^6.1.14",
+    "chromedriver": "^83.0.0",
+    "codeceptjs": "^2.6.5",
+    "cypress": "^4.8.0",
+    "puppeteer": "^3.3.0",
+    "testcafe": "^1.8.6",
+    "wdio-chromedriver-service": "^6.0.3"
+  }
+}
